@@ -25,7 +25,7 @@
       <ul>
         <li ng-repeat="todo in todos">
           <label class="done-{{todo.done}}">
-          <input type="checkbox" ng-model="todo.done" ng-change="playSound(todo.done)">
+          <input type="checkbox" ng-model="todo.done" ng-click="playSound(todo.done)">
           {{todo.text}}
           </label>
         </li>
