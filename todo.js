@@ -41,6 +41,9 @@ function TodoController($scope) {
       count += todo.done ? 0 : 1;
     }); 
     return count;
+
+    localStorage.todos = JSON.stringify($scope.todos);
+
   };
  
   $scope.archive = function() {
