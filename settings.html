@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./main.css">
+    <script type="text/javascript" src="./settings.js" defer></script>
+
+    <meta charset="utf-8">
+    <title>Task List</title>
+
+    <nav class="navbar">
+        <div class="container">
+          <ul class="nav-list">
+            <li><a href="./">Home</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+          </ul>
+        </div>
+      </nav>
+</head>
+<body>    
+    <h1>Settings</h1>
+    
+    <section class = "fontSection">
+<!--            radio button form-->
+        <form>
+            <label>Open Dyslexic Font</label> <br>
+
+            <label>
+            <input id="off" type="radio" name = "font" value = "dysOff" onclick="setFont('Bagnard')">
+            Off <span></span></label>
+            <label>
+            <input id="on" type="radio" name = "font" value = "dysOn" onclick="setFont('opendyslexic')">
+            On<span></span></label>
+        </form>
+    </section>
+    
+    <footer>Open Source. MIT License.</footer> 
+</body>
+
+
+</html> 

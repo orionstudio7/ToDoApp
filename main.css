@@ -1,0 +1,141 @@
+@font-face{
+    font-family: Bagnard;
+    src: url('./Fonts/Bagnard.otf')
+}
+@font-face{
+    font-family: opendyslexic;
+    src: url('./Fonts/OpenDyslexic-Regular.otf')
+}
+@font-face{
+    font-family: opendyslexic;
+    src: url('./Fonts/OpenDyslexic-Bold.otf');
+    font-weight: bold;
+}
+
+*:focus {
+	outline: 3px #ffffff solid;
+	outline-offset: 0;
+	box-shadow: 0 0 0 6px #000000;
+} 
+
+
+html
+{
+    background-color: #b3c3ca;
+    font-family: Bagnard;
+}  
+
+a{
+    color: black;
+}
+
+h1
+{  
+    text-align: center;
+    color: black;
+}
+.todo
+{
+    background-color: #d1ccc6;
+    word-wrap: break-word;
+    padding: 70px;
+    font-size: 3vw;
+}
+
+footer{
+    padding: 10px;
+}
+
+input
+{
+    font-size: 3vw;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    font-family: Bagnard;
+    padding: 10px;
+    /* width: 100%; */
+    margin: 10px;
+    box-sizing: border-box;
+
+
+
+}
+
+.addTodo{
+    width: 100%;
+}
+nav 
+{
+    background-color: #032b32;
+    width:width 100%;
+    list-style: none;
+    font-size: 3vw;
+    padding: 1px;    
+}
+
+nav a {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+  /* grid-template-columns: 1em auto; */
+     gap: 0.5em;
+}
+
+
+.fontSection{
+    background-color: #d1ccc6;
+    padding: 50px;
+    
+}
+
+button{
+    font-family: Bagnard;
+    box-sizing: border-box;
+
+}
+
+
+ul
+{
+    font-style: italic;
+}
+
+
+/* responsiveness */
+
+@media (max-width: 600px) {
+
+    nav{
+        font-size: 20px;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    input{
+        font-size: 15px;
+    }
+
+    .todo
+    {
+        padding: 25px;
+        font-size: 15px;
+    }
+
+    
+}
+
