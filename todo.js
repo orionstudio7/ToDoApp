@@ -65,6 +65,7 @@ function TodoController($scope) {
         var url = urls[Math.floor(Math.random() * urls.length)]; 
 
         var audio = new Audio(url);
+        audio.load()
         audio.play();
 
     }
@@ -76,6 +77,7 @@ function TodoController($scope) {
         var url = urls[Math.floor(Math.random() * urls.length)]; 
 
         var audio = new Audio(url);
+        audio.load()
         audio.play();
     }
 
