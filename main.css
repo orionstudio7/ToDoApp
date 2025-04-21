@@ -21,8 +21,16 @@
 
 html
 {
-    background-color: #b3c3ca;
+    background-color: #000000;
     font-family: Bagnard;
+}
+
+body
+{
+    max-width: 600px;
+	height: 100%;
+    margin: 0 auto;
+    background-color: #b3c3ca;
 }  
 
 a{
@@ -33,14 +41,14 @@ h1
 {  
     text-align: center;
     color: black;
-    font-size: 5vw;
+    font-size: 20px;
 }
 .todo
 {
     background-color: #d1ccc6;
     word-wrap: break-word;
     padding: 70px;
-    font-size: 3vw;
+    font-size: 15px;
 }
 
 footer{
@@ -49,7 +57,7 @@ footer{
 
 input
 {
-    font-size: 3vw;
+    font-size: 15px;
     border-width: thick;
     border-color: black;
     border-style: solid;
@@ -71,7 +79,7 @@ nav
     background-color: #032b32;
     width:width 100%;
     list-style: none;
-    font-size: 3vw;
+    font-size: 20px;
     padding: 1px;    
 }
 
@@ -118,12 +126,6 @@ ul
 
 @media (max-width: 600px) {
 
-    nav{
-        font-size: 20px;
-    }
-    h1{
-        font-size: 20px;
-    }
     
     .nav-list{
         display: flex;
@@ -131,14 +133,9 @@ ul
         align-items: center;
     }    
 
-    input{
-        font-size: 15px;
-    }
-
     .todo
     {
         padding: 25px;
-        font-size: 15px;
     }
 
     
