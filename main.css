@@ -21,8 +21,20 @@
 
 html
 {
-    background-color: #b3c3ca;
+    background-color: #302e2c;
     font-family: Bagnard;
+	height: 100%;
+}
+
+body
+{
+	background-color: #d1ccc6;
+	max-width: 600px;
+	margin: 0 auto;
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
 }  
 
 a{
@@ -33,23 +45,30 @@ h1
 {  
     text-align: center;
     color: black;
-    font-size: 5vw;
+    font-size: 20px;
+	background-color: #b3c3ca;
+	padding: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 .todo
 {
     background-color: #d1ccc6;
     word-wrap: break-word;
     padding: 70px;
-    font-size: 3vw;
+    font-size: 15px;
 }
 
-footer{
-    padding: 10px;
+footer {
+	background-color: #b3c3ca;
+	padding: 10px;
+	margin-bottom: 0;
+	margin-top: auto;
 }
 
 input
 {
-    font-size: 3vw;
+    font-size: 15px;
     border-width: thick;
     border-color: black;
     border-style: solid;
@@ -69,9 +88,9 @@ input
 nav 
 {
     background-color: #032b32;
-    width:width 100%;
+    width: 100%;
     list-style: none;
-    font-size: 3vw;
+    font-size: 20px;
     padding: 1px;    
 }
 
@@ -118,12 +137,6 @@ ul
 
 @media (max-width: 600px) {
 
-    nav{
-        font-size: 20px;
-    }
-    h1{
-        font-size: 20px;
-    }
     
     .nav-list{
         display: flex;
@@ -131,14 +144,9 @@ ul
         align-items: center;
     }    
 
-    input{
-        font-size: 15px;
-    }
-
     .todo
     {
         padding: 25px;
-        font-size: 15px;
     }
 
     
