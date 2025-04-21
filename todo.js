@@ -40,9 +40,11 @@ function TodoController($scope) {
     angular.forEach($scope.todos, function(todo) {
       count += todo.done ? 0 : 1;
     }); 
-    return count;
 
     localStorage.todos = JSON.stringify($scope.todos);
+
+    return count;
+
 
   };
  
